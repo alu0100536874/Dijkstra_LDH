@@ -19,7 +19,25 @@ public class Disjktra {
     Grafo grafo;
     ListaNodo listaNodosAdyacentes;
     ArrayList<Arista> aux = new ArrayList<Arista>();
-    public Disjktra(Grafo grafo){
+    public Grafo getGrafo() {
+		return grafo;
+	}
+	public void setGrafo(Grafo grafo) {
+		this.grafo = grafo;
+	}
+	public ListaNodo getListaNodosAdyacentes() {
+		return listaNodosAdyacentes;
+	}
+	public void setListaNodosAdyacentes(ListaNodo listaNodosAdyacentes) {
+		this.listaNodosAdyacentes = listaNodosAdyacentes;
+	}
+	public ArrayList<Arista> getAux() {
+		return aux;
+	}
+	public void setAux(ArrayList<Arista> aux) {
+		this.aux = aux;
+	}
+	public Disjktra(Grafo grafo){
         this.grafo = grafo;
         listaNodosAdyacentes = new ListaNodo();
     }
